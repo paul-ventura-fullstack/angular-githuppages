@@ -1,0 +1,44 @@
+#my-header-container{
+        color:gray;
+        
+}
+#my-title{
+        text-align: center;
+        color:whitesmoke;
+        font-family:'Courier New', Courier, monospace;
+}
+#my-date-time{
+        padding-left: 48px;
+        align-items: left;
+        align-content: center;
+        vertical-align: middle;
+        align-self: center;
+}
+#my-languages{
+        padding-right: 38px;
+        text-align-last: right;
+        align-content: center;
+        vertical-align: auto;
+        align-self: center;
+}
+
+img{
+        padding-right: 4px;
+        padding-left: 4px;
+        height: 16px;
+        border-color: white;
+        border-width: 8px;
+}
+.clock {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        color: #17D4FE;
+        font-size: 60px;
+        font-family: Orbitron;
+        letter-spacing: 7px;
+       
+    
+    
+    }

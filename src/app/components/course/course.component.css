@@ -1,0 +1,24 @@
+.container{
+        margin-top: 25px;
+        margin-bottom: 25px;
+
+}
+.btn{
+        margin-right: 4px;
+        margin-left: 4px;
+}
+#my-table-header{
+        margin-top: 25px;
+        margin-bottom: 10px;
+}
+#my-row-label{
+        text-align: center;
+        align-items: center;
+        align-self: center;
+}
+
+.final-col{
+        align-items: right;
+        align-content: right;
+        text-align-last: right;
+}

@@ -4,8 +4,13 @@ import { HomeComponent } from './components/home/home.component';
 import { BlogComponent } from './components/blog/blog.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { CourseComponent } from './components/course/course.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 const routes: Routes = [
+        {
+                path:'',
+                component : HomeComponent   
+        },
         {
                 path:'home',
                 component : HomeComponent

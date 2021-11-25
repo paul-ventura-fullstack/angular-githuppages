@@ -1,20 +1,17 @@
-<div class="container">
-
-        <div class="card" style="width: 70rem;">
-                <img src="https://i.picsum.photos/id/889/1080/720.jpg?hmac=UQUWxZ3XbMlWvwoOJhDtoEZyFVUrZBaK_ZWl6xVclO8" class="card-img-top" alt="...">
-                <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-                <ul class="list-group list-group-flush">
-                <li class="list-group-item">An item</li>
-                <li class="list-group-item">A second item</li>
-                <li class="list-group-item">A third item</li>
-                </ul>
-                <div class="card-body">
-                <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a>
-                </div>
-        </div>
-
+<div class="container" id="my-container">
+   
+        <h1>Today</h1>
+           
+        <ngb-carousel>
+          <ng-template ngbSlide *ngFor="let image of images">
+            <div class="wrapper">
+              <img [src]="image.src" alt="Random first slide" >
+            </div>
+            <div class="carousel-caption">
+              <h3>{{ image.title }}</h3>
+              <p>{{ image.short }}</p>
+            </div>
+          </ng-template>
+        </ngb-carousel>
+             
 </div>
