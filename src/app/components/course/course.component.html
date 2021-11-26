@@ -1,111 +1,53 @@
 <div class="container">
-        <h1>Teachers list and schedule</h1>
-        <div class="row" id="my-table-header">
-                <div class="col-1" id="my-row-label">Search:</div>
-                <div class="col-3">
-                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Search">
-                </div>
-                <div class="col-6"></div>
-                <div class="col-2">
-                        <button type="button" class="btn btn-primary">Create new</button>
+        <div class="card" id="my-main-card">
+                <div class="card-body">
+                        <h3 class="card-title">Listado de profesores</h3>
+                        <button class="btn btn-dark btn-md float-right" routerLink="/create-empleado">Agregar</button>
+                        <table class="table table-striped mt-5">
+
+                                <thead>
+                                        <tr>
+                                                <th scope="col">Nombre</th>
+                                                <th scope="col">Apellido</th>
+                                                <th scope="col">DNI</th>
+                                                <th scope="col">Salario</th>
+                                                <th scope="col">Acciones</th>
+                                        </tr>
+                                </thead>
+                                <tbody>
+                                        <tr>                                    
+                                                <td>Mark</td>
+                                                <td>Otto</td>
+                                                <td>43158415</td>
+                                                <td>25000</td>
+                                                <td>
+                                                        <i class="fas fa-edit fa-lg text-info" onClick="getCities()"></i>
+                                                        <i class="fas fa-trash fa-lg text-danger"></i>
+                                                </td>
+                                        </tr>
+                                        <tr>
+                                                <td>Mark</td>
+                                                <td>Otto</td>
+                                                <td>43158415</td>
+                                                <td>25000</td>
+                                                <td>
+                                                        <i class="fas fa-edit fa-lg text-info"></i>
+                                                        <i class="fas fa-trash fa-lg text-danger"></i>
+                                                </td>
+                                        </tr>
+                                        <tr>
+                                                <td>Mark</td>
+                                                <td>Otto</td>
+                                                <td>43158415</td>
+                                                <td>25000</td>
+                                                <td>
+                                                        <i class="fas fa-edit fa-lg text-info"></i>
+                                                        <i class="fas fa-trash fa-lg text-danger"></i>
+                                                </td>
+                                        </tr>
+                                </tbody>
+                        </table>
                 </div>
         </div>
-<table class="table table-hover" title="Teachers list">
-        <thead class="table-dark">
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">First Name</th>
-            <th scope="col">Last Name</th>
-            <th scope="col">Handle</th>
-            <th scope="col">Phone</th>
-            <th scope="col" style="text-align-last: center;">Actions</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-            <td>999888111</td>
-            <td class="final-col">
-                <button type="button" class="btn btn-primary">View schedule</button>
-                <button type="button" class="btn btn-secondary">Edit</button>
-                <button type="button" class="btn btn-danger">Delete</button>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton D'Azure</td>
-            <td>@fat</td>
-            <td>999888111</td>
-            <td class="final-col">
-                <button type="button" class="btn btn-primary">View schedule</button>
-                <button type="button" class="btn btn-secondary">Edit</button>
-                <button type="button" class="btn btn-danger">Delete</button>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>Larry Christian</td>
-            <td>Schwarzkopf</td>
-            <td>@twitter</td>
-            <td>999888111</td>
-            <td class="final-col">
-                <button type="button" class="btn btn-primary">View schedule</button>
-                <button type="button" class="btn btn-secondary">Edit</button>
-                <button type="button" class="btn btn-danger">Delete</button>
-            </td>
-            </tr>
-            <tr>
-            <th scope="row">4</th>
-            <td>Friedrich</td>
-            <td>Baerbock</td>
-            <td>@baernock</td>
-            <td>999888111</td>
-            <td class="final-col">
-                <button type="button" class="btn btn-primary">View schedule</button>
-                <button type="button" class="btn btn-secondary">Edit</button>
-                <button type="button" class="btn btn-danger">Delete</button>
-            </td>
-        </tr>
-        <tr>
-            <th scope="row">5</th>
-            <td>Gary</td>
-            <td>Oldman</td>
-            <td>@oldmangary</td>
-            <td>999888111</td>
-            <td class="final-col">
-                <button type="button" class="btn btn-primary">View schedule</button>
-                <button type="button" class="btn btn-secondary">Edit</button>
-                <button type="button" class="btn btn-danger">Delete</button>
-            </td>
-        </tr>
-        <tr>
-            <th scope="row">6</th>
-            <td>Cristina</td>
-            <td>Childs</td>
-            <td>@cjchilds</td>
-            <td>999888111</td>
-            <td class="final-col">
-                <button type="button" class="btn btn-primary">View schedule</button>
-                <button type="button" class="btn btn-secondary">Edit</button>
-                <button type="button" class="btn btn-danger">Delete</button>
-            </td>
-          </tr>
-        </tbody>
-
-      </table>
-      <nav aria-label="Page navigation example">
-        <ul class="pagination">
-          <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-          <li class="page-item"><a class="page-link" href="#">1</a></li>
-          <li class="page-item"><a class="page-link" href="#">2</a></li>
-          <li class="page-item"><a class="page-link" href="#">3</a></li>
-          <li class="page-item"><a class="page-link" href="#">Next</a></li>
-        </ul>
-</nav>
-
 </div>
 

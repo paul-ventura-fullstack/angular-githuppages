@@ -5,11 +5,14 @@ import { BlogComponent } from './components/blog/blog.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { CourseComponent } from './components/course/course.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { CreateEmpleadoComponent } from './components/create-empleado/create-empleado.component';
+
 
 const routes: Routes = [
         {
                 path:'',
-                component : HomeComponent   
+                redirectTo: 'home',
+                pathMatch: 'full'  
         },
         {
                 path:'home',
@@ -26,6 +29,15 @@ const routes: Routes = [
         {
                 path:'courses',
                 component : CourseComponent
+        },
+        {
+                path: 'create-empleado',
+                component: CreateEmpleadoComponent
+        },
+        {
+                path:'**',
+                redirectTo: 'home',
+                pathMatch: 'full'  
         }
 
 ];

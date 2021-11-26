@@ -22,3 +22,13 @@
         align-content: right;
         text-align-last: right;
 }
+
+#my-main-card{
+        padding: 20px;
+}
+
+.fas{
+        margin-right: 16px;
+        margin-left: 16px;
+        cursor: pointer;
+}

@@ -13,6 +13,9 @@ import { FooterComponent } from './components/footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './components/header/header.component';
 import { NgxMarqueeModule } from 'ngx-marquee';
+import { CreateEmpleadoComponent } from './components/create-empleado/create-empleado.component';
+
+
 
 @NgModule({
   declarations: [
@@ -25,13 +28,16 @@ import { NgxMarqueeModule } from 'ngx-marquee';
     FooterComponent,
     HeaderComponent,
     
+    CreateEmpleadoComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     NgbModule,
-    NgxMarqueeModule 
+    NgxMarqueeModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

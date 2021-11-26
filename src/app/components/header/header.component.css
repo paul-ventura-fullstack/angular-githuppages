@@ -4,8 +4,7 @@
 }
 #my-title{
         text-align: center;
-        color:whitesmoke;
-        font-family:'Courier New', Courier, monospace;
+        background-color: black;
 }
 #my-date-time{
         padding-left: 48px;
@@ -13,6 +12,11 @@
         align-content: center;
         vertical-align: middle;
         align-self: center;
+        font-family: Orbitron;
+        letter-spacing: 2px;
+        background-color: transparent;
+        color: whitesmoke;
+        font-size: 15px;
 }
 #my-languages{
         padding-right: 38px;
@@ -41,4 +45,11 @@ img{
        
     
     
+    }
+    .ticker-custom{
+        color: greenyellow;
+        font-family: Orbitron;
+        letter-spacing: 2px;
+        background-color: transparent;
+        font-size:15px;
     }

@@ -26,31 +26,28 @@ const db = getFirestore(app);
 const colRef = collection(db, 'books');
 
 @Component({
-  selector: 'app-course',
-  templateUrl: './course.component.html',
-  styleUrls: ['./course.component.css']
+  selector: 'app-create-empleado',
+  templateUrl: './create-empleado.component.html',
+  styleUrls: ['./create-empleado.component.css']
 })
-export class CourseComponent implements OnInit {
+export class CreateEmpleadoComponent implements OnInit {
 
   constructor() { }
 
   ngOnInit(): void {
-        
-        async function getCities(db: Firestore) {
-                const citiesCol = collection(db, 'cities');
-                const citySnapshot = await getDocs(citiesCol);
-                const cityList = citySnapshot.docs.map(doc => doc.data());
-                return cityList;
-              }
-
-        const addBookForm = document.querySelector('.add')
-        addBookForm?.addEventListener('submit', (e) => {
-                e.preventDefault()
-                addDoc(colRef, {
-                        title: "",
-                        author: "",
+        let addBookForm : any = {};
+        addBookForm = document.querySelector('.add');
+        if(addBookForm != null) {
+                addBookForm.addEventListener('submit', (e: { preventDefault: () => void; }) => {
+                        e.preventDefault()
+                        
+                        addDoc(colRef, {
+                                title: addBookForm.title.value,
+                                author: addBookForm.author.value,
+                        })
                 })
-        })
+
+        }
   }
 
 }
